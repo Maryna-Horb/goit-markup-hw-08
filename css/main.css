@@ -35,15 +35,30 @@ body {
 
 .section {
   margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .backdrop {
@@ -464,11 +479,6 @@ body {
   color: #ffffff;
 }
 
-.container-about-us {
-  display: flex;
-  flex-direction: column;
-}
-
 .about-us__icon {
   content: "";
   display: block;
@@ -483,9 +493,24 @@ body {
 .about-us__icon-about-us {
   display: inline;
   align-content: center;
-  margin: 25px 100px;
+  margin: 25px 140px;
   width: 70px;
   height: 70px;
+}
+@media screen and (min-width: 480px) {
+  .about-us__icon-about-us {
+    margin: 25px 190px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__icon-about-us {
+    margin: 25px 142px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us__icon-about-us {
+    margin: 25px 100px;
+  }
 }
 
 .about-us__title {
@@ -498,18 +523,42 @@ body {
   text-transform: uppercase;
   color: var(--grey-color);
 }
+@media screen and (min-width: 480px) {
+  .about-us__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__title {
+    text-align: start;
+  }
+}
 
 .about-us__list {
-  display: flex;
-  flex-direction: row;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 
 .about-us__item {
-  flex-basis: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
-.about-us__item:nth-child(4n) {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .about-us__item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-us__item {
+    margin-left: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .about-us__text {
