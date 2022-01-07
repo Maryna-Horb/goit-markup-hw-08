@@ -1,0 +1,21 @@
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--grey-color);
+}
+.list,
+.about-us__list,
+.activities__list,
+.our-team-list__item,
+.contacts-footeer-list,
+.social-list,
+.works-list,
+.project-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
