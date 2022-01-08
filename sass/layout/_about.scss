@@ -30,9 +30,7 @@
   @include font(14px, 700, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--grey-color);
-  @media screen and (min-width: 480px) {
-    text-align: center;
-  }
+  text-align: center;
   @media screen and (min-width: 768px) {
     text-align: start;
   }
