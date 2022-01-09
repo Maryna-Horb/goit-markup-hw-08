@@ -521,6 +521,8 @@ img {
 .open-menu-btn {
   background-color: var(--white-color);
   border: none;
+  position: relative;
+  top: 10px;
   margin-left: auto;
 }
 .open-menu-btn:hover, .open-menu-btn:focus {
