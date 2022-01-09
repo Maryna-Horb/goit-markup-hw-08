@@ -149,6 +149,7 @@
   margin-right: 10px;
 }
 .open-menu-btn {
+    display: block;
     background-color: var(--white-color);
     border: none;
     width: 40px;
@@ -160,7 +161,9 @@
       fill: var(--light-blue-color);
     }
   @media screen and (min-width: 768px) {
-    visibility: hidden;
+    width: 0%;
+    height: 0%;
+    
   }
 }
 
@@ -169,6 +172,8 @@
     height: 16px;
     @media screen and (min-width: 768px) {
     visibility: hidden;
+    width: 0%;
+    height: 0%;
   }
 }
 .mob-menu {
