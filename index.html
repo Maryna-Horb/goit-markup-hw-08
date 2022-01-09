@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-    <!-- <header class="header section">
+    <header class="header section">
         <div class="container container-header">    
-         <nav class="header-nav">
+            <nav class="header-nav">
                 <a href class="header-nav__link-logo">Web<span class="header-nav__logo">Studio</span></a>
                 <ul class="list header-list">
                     <li class="header-list__item"><a href="" class="link header-list__link current">Студия</a></li>
@@ -41,8 +41,61 @@
                     +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="open-menu-btn">
+                <svg class="open-menu-btn__icon">
+                    <use href="/images/icons.svg#icon-menu_40px" class="open-menu-btn__link">
+                    </use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden">
+            <div class="container-mob-menu">
+                <div class="mob-menu-top">
+                <button type="button" class="close-menu-btn">
+                    <svg class="close-menu-btn__icon">
+                        <use href="/images/icons.svg#icon-close" class="close-menu-btn__link">
+                        </use>
+                    </svg>
+                </button>
+                <ul class="list mob-menu-list">
+                    <li class="mob-menu-list__item"><a href="./portfolio.html" class="link mob-menu-list__link">Портфолио</a></li>
+                    <li class="mob-menu-list__item"><a href="" class="link mob-menu-list__link current">Студия</a></li>
+                    <li class="mob-menu-list__item"><a href="" class="link mob-menu-list__link">Контакты</a></li>
+                </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                <ul class="list mob-menu-contact-list">
+                    <li class="mob-menu-contact-list__item">
+                        <a href="tel:+380961111111" class=" link mob-menu-contact-list__link">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mob-menu-contact-list__item">
+                        <a href="mailto:info@devstudio.com" class=" link mob-menu-contact-list__link">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="list mob-menu-social-list">
+                    <li class="mob-menu-social-list__item">
+                        <a href="" class=" link mob-menu-social__link">
+                            Instagram</a>
+                    </li>
+                    <li class="mob-menu-social-list__item">
+                        <a href="" class=" link mob-menu-social__link">
+                            Twitter</a>
+                    </li>
+                    <li class="mob-menu-social-list__item">
+                        <a href="" class=" link mob-menu-social__link">
+                            Facebook</a>
+                    </li>
+                    <li class="mob-menu-social-list__item">
+                        <a href="" class=" link mob-menu-social__link">
+                            Linkedin</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </header>
     <main>
             <section class="hero section">
                 <div class=" container container-hero">
@@ -128,7 +181,28 @@
                     <h2 class="our-team__title">Наша команда</h2>
                     <ul class="our-team-list">
                         <li class="our-team-list__item">
-                            <a href=""><img src="./images/команда/img.jpg" alt="продакт дизайнер" width="270" height="260"></a>
+                            <picture>
+                                <source
+                                srcset="
+                                ./images/команда/img-desk.jpg  1x,
+                                ./images/команда/img-desk-2x.jpg  2x"
+                                media="(min-width: 1200px)"
+                                >
+                                <source 
+                                srcset="
+                                ./images/команда/img-tab.jpg  1x,
+                                ./images/команда/img-tab2x.jpg  2x" 
+                                media="(min-width: 768px)"
+                                >
+                                <source 
+                                srcset="
+                                ./images/команда/img-mob.jpg  1x,
+                                ./images/команда/img-mob2x.jpg  2x"
+                                media="(min-width: 320px)"
+                                >
+                                <img src="./images/команда/img.jpg" alt="продакт дизайнер">
+                            </picture>
+                            <!-- <a href=""><img src="./images/команда/img.jpg" alt="продакт дизайнер" width="270" height="260"></a> -->
                             <div class="our-team-list__manager-card">
                                 <h3 class="our-team-list__text">Игорь Демьяненко</h3>
                                 <p lang="en" class="our-team-list__subtext">Product Designer</p>
@@ -165,7 +239,26 @@
                             </div>
                         </li>
                         <li class="our-team-list__item">
-                            <a href=""><img src="./images/команда/img2.jpg" alt="фронт енд" width="270" height="260"></a>
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/команда/img2-desk.jpg  1x,
+                                ./images/команда/img2-desk2x.jpg  2x"
+                                media="(min-width: 1200px)"
+                                >
+                                <source srcset="
+                                ./images/команда/img2-tab.jpg  1x,
+                                ./images/команда/img2-tab2x.jpg  2x" 
+                                media="(min-width: 768px)"
+                                >
+                                <source srcset="
+                                ./images/команда/img2-mob.jpg  1x,
+                                ./images/команда/img2-mob2x.jpg  2x" 
+                                media="(min-width: 320px)"
+                                >
+                                <img src="./images/команда/img2.jpg" alt="фронт енд">
+                            </picture>
+                            <!-- <a href=""><img src="./images/команда/img2.jpg" alt="фронт енд" width="270" height="260"></a> -->
                             <div class="our-team-list__manager-card">
                                 <h3 class="our-team-list__text">Ольга Репина</h3>
                                 <p lang="en" class="our-team-list__subtext">Frontend Developer</p>
@@ -202,7 +295,25 @@
                             </div>
                         </li>
                         <li class="our-team-list__item">
-                            <a href=""><img src="./images/команда/img3.jpg" alt="маркетолог" width="270" height="260"></a>
+                            <picture>
+                                <source
+                                srcset="
+                                ./images/команда/img3-desk.jpg  1x,
+                                ./images/команда/img3-desk2x.jpg  2x" 
+                                media="(min-width: 1200px)">
+                                <source 
+                                srcset="
+                                ./images/команда/img3-tab.jpg  1x,
+                                ./images/команда/img3-tab2x.jpg  2x" 
+                                media="(min-width: 768px)">
+                                <source 
+                                srcset="
+                                ./images/команда/img3-mob.jpg  1x,
+                                ./images/команда/img3-mob2x.jpg  2x" 
+                                media="(min-width: 320px)">
+                                <img src="./images/команда/img3.jpg" alt="маркетолог">
+                            </picture>
+                            <!-- <a href=""><img src="./images/команда/img3.jpg" alt="маркетолог" width="270" height="260"></a> -->
                             <div class="our-team-list__manager-card">
                                 <h3 class="our-team-list__text">Николай Тарасов</h3>
                                 <p lang="en" class="our-team-list__subtext">Marketing</p>
@@ -239,7 +350,25 @@
                             </div>
                         </li>
                         <li class="our-team-list__item">
-                            <a href=""><img src="./images/команда/img4.jpg" alt="дизайнер" width="270" height="260"></a>
+                            <picture>
+                                <source 
+                                srcset="
+                                ./images/команда/img4-desk.jpg  1x,
+                                ./images/команда/img4-desk2x.jpg  2x" 
+                                media="(min-width: 1200px)">
+                                <source 
+                                srcset="
+                                ./images/команда/img4-tab.jpg  1x,
+                                ./images/команда/img4-tab2x.jpg  2x"
+                                media="(min-width: 768px)">
+                                <source 
+                                srcset="
+                                ./images/команда/img4-mob.jpg  1x,
+                                ./images/команда/img4-mob2x.jpg  2x"
+                                media="(min-width: 320px)">
+                                <img src="./images/команда/img4.jpg" alt="дизайнер">
+                            </picture>
+                            <!-- <a href=""><img src="./images/команда/img4.jpg" alt="дизайнер" width="270" height="260"></a> -->
                             <div class="our-team-list__manager-card">
                                 <h3 class="our-team-list__text">Михаил Ермаков</h3>
                                 <p lang="en" class="our-team-list__subtext">UI Designer</p>
@@ -475,5 +604,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
