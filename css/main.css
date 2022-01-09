@@ -537,6 +537,7 @@ img {
 }
 
 .open-menu-btn__icon {
+  fill: #000000;
   width: 24px;
   height: 16px;
 }
