@@ -518,29 +518,23 @@ img {
   margin-right: 10px;
 }
 
-.open-menu-btn {
-  background-color: var(--white-color);
-  border: none;
-  position: relative;
-  top: 10px;
-  margin-left: auto;
-}
-.open-menu-btn:hover, .open-menu-btn:focus {
-  fill: var(--light-blue-color);
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 479px) {
   .open-menu-btn {
-    visibility: hidden;
+    background-color: var(--white-color);
+    border: none;
+    position: relative;
+    top: 10px;
+    margin-left: auto;
+  }
+  .open-menu-btn:hover, .open-menu-btn:focus {
+    fill: var(--light-blue-color);
   }
 }
 
-.open-menu-btn__icon {
-  width: 40px;
-  height: 40px;
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 479px) {
   .open-menu-btn__icon {
-    visibility: hidden;
+    width: 40px;
+    height: 40px;
   }
 }
 
