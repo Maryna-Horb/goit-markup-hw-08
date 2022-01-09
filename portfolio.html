@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-    <!-- <header class="header section">
+    <header class="header section">
         <div class="container container-header">     
             <nav class="header-nav">
                 <a href class="header-nav__link-logo">Web<span class="header-nav__logo">Studio</span></a>
@@ -41,11 +41,65 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
-        </div>
-    </header> -->
+            <button type="button" class="open-menu-btn">
+                <svg class="open-menu-btn__icon">
+                    <use href="/images/icons.svg#icon-menu_40px" class="open-menu-btn__link">
+                    </use>
+                </svg>
+            </button>
+            </div>
+            <div class="mob-menu is-hidden">
+                <div class="container-mob-menu">
+                    <div class="mob-menu-top">
+                        <button type="button" class="close-menu-btn">
+                            <svg class="close-menu-btn__icon">
+                                <use href="/images/icons.svg#icon-close" class="close-menu-btn__link">
+                                </use>
+                            </svg>
+                        </button>
+                        <ul class="list mob-menu-list">
+                            <li class="mob-menu-list__item"><a href="./portfolio.html"
+                                    class="link mob-menu-list__link">Портфолио</a></li>
+                            <li class="mob-menu-list__item"><a href="" class="link mob-menu-list__link current">Студия</a></li>
+                            <li class="mob-menu-list__item"><a href="" class="link mob-menu-list__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                        <ul class="list mob-menu-contact-list">
+                            <li class="mob-menu-contact-list__item">
+                                <a href="tel:+380961111111" class=" link mob-menu-contact-list__link">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-menu-contact-list__item">
+                                <a href="mailto:info@devstudio.com" class=" link mob-menu-contact-list__link">
+                                    info@devstudio.com</a>
+                            </li>
+                        </ul>
+                        <ul class="list mob-menu-social-list">
+                            <li class="mob-menu-social-list__item">
+                                <a href="" class=" link mob-menu-social__link">
+                                    Instagram</a>
+                            </li>
+                            <li class="mob-menu-social-list__item">
+                                <a href="" class=" link mob-menu-social__link">
+                                    Twitter</a>
+                            </li>
+                            <li class="mob-menu-social-list__item">
+                                <a href="" class=" link mob-menu-social__link">
+                                    Facebook</a>
+                            </li>
+                            <li class="mob-menu-social-list__item">
+                                <a href="" class=" link mob-menu-social__link">
+                                    Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </header>
     <main>
-        <!-- <section class="works section">
-           <div class=" container container-works">
+        <section class="works section">
+            <div class=" container container-works">
                 <h2 hidden>activities</h2>
                 <ul class="works__list list">
                     <li class="works__item">
@@ -68,9 +122,9 @@
             <div class=" container container-project">
                 <ul class="project-list">
                     <li class="project-list__item">
-                       <a href="" class="project-list__link">
+                        <a href="" class="project-list__link">
                             <div class="project-list__wrap">
-                               <img src="./images/project/img.jpg" alt="web" width="370" height="294">
+                                <img src="./images/project/img.jpg" alt="web" width="370" height="294">
                                 <p class="project-list__top-text">
                                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
@@ -204,9 +258,9 @@
                     </li>
                 </ul>
             </div>  
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="footer section">
+    <footer class="footer section">
         <div class=" container container-footer">
             <h2 hidden>контакты</h2>
             <div class="logo">
@@ -258,12 +312,12 @@
                     </a>
                 </li>
             </ul>
-            <section class="subscription">
-                <h2 class="subscription__text">Подпишитесь на рассылку</h2>
-                <div class="subscription__wrap">
-                    <input type="email" name="email" class="subscription__input" placeholder="Email">
-                    <button type="submit" class="subscription__btn">Подписаться
-                        <svg class="subscription__icon" width="24" height="24">
+            <section class="container-footer-subscription">
+                <h2 class="container-footer-subscription__text">Подпишитесь на рассылку</h2>
+                <div class="container-footer-subscription__wrap">
+                    <input type="email" name="email" class="container-footer-subscription__input" placeholder="Email">
+                    <button type="submit" class="container-footer-subscription__btn">Подписаться
+                        <svg class="container-footer-subscription__icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-icon-send"></use>
                         </svg>
                     </button>
@@ -271,6 +325,6 @@
             </section>
         </div>
     
-    </footer> -->
+    </footer>
 </body>
 </html>
