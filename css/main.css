@@ -1482,10 +1482,6 @@ img {
   transform: translateY(-70%);
 }
 
-.container-works {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 @media screen and (min-width: 768px) {
   .container-works {
     display: flex;
@@ -1496,13 +1492,14 @@ img {
 .works__list {
   display: flex;
   flex-wrap: wrap;
-  width: calc(100% / 3 -30px);
   margin-bottom: 50px;
   min-width: 73px;
 }
 
 .works__item {
   margin-right: 8px;
+  margin-bottom: 15px;
+  width: calc(100% / 3 -30px);
 }
 
 .works__button {
