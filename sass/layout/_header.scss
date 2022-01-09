@@ -150,8 +150,7 @@
 }
 .open-menu-btn {
   display: flex;
-  fill: #000000;
-  background-color: #00FFFFFF;
+  background-color: transparent;
   border: none;
   min-width: 40px;
   min-height: 40px;
@@ -166,9 +165,10 @@
   }
 }
 .open-menu-btn__icon {
-    
-    width: 24px;
-    height: 16px;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    min-height: 16px;
     @media screen and (min-width: 768px) {
     display: none;
   }
