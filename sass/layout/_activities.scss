@@ -1,48 +1,78 @@
+
 .activities {
+  height: 0px;
   padding-top: 0px;
+  padding-bottom: 0px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    height: auto;
+  }
 }
 .container-activities {
-  display: flex;
-  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .activities__title {
-  margin-top: 0;
-  margin-bottom: 50px;
-  @include font(36px, 700, 1.17, 0.03em);
-  text-align: center;
+  margin: 0 auto;
+  visibility: hidden;
+  @media screen and (min-width: 1200px) {
+    visibility: visible;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    @include font(36px, 700, 1.17, 0.03em);
+    text-align: center;
+  }
 }
 .activities__list {
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
+  visibility: hidden;
+  @media screen and (min-width: 1200px) {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+  }
 }
 .activities__wrap {
-  position: relative;
-  overflow: hidden;
+  visibility: hidden;
+  @media screen and (min-width: 1200px) {
+    visibility: visible;
+    position: relative;
+    overflow: hidden;
+  }
 }
 .activities__item {
-  flex-basis: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  position: relative;
+  visibility: hidden;
+  @media screen and (min-width: 1200px) {
+    visibility: visible;
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    position: relative;
     &:hover .activities__top-text {
-    transform: translate(0);
-  }
-  &:nth-child(3n) {
-    margin-right: 0px;
+      transform: translate(0);
+    }
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
   }
 }
 .activities__top-text {
-  position: absolute;
-  @include font(14px, 700, 1.14, 0.03em);
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white-color);
-  background-color: rgba(47, 48, 58, 0.8);
-  top: 224px;
-  left: 0;
-  padding: 27px 82px;
-  width: 100%;
-  margin: 0 auto;
-  transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+  @media screen and (min-width: 1200px) {
+    visibility: visible;
+    position: absolute;
+    @include font(14px, 700, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    top: 224px;
+    left: 0;
+    padding: 27px 82px;
+    width: 100%;
+    margin: 0 auto;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
