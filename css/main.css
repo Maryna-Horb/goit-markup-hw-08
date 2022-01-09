@@ -521,7 +521,7 @@ img {
 .open-menu-btn {
   display: flex;
   fill: #000000;
-  background-color: var(--white-color);
+  background-color: white;
   border: none;
   min-width: 40px;
   min-height: 40px;
