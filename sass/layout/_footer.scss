@@ -1,4 +1,5 @@
 .footer {
+  max-width: 100%;
   background-color: var(--medium-light-grey-color);
   padding-bottom: 60px;
   padding-top: 60px;
@@ -36,7 +37,7 @@
   font-family: Raleway;
   @include font(24px, 700, 1.17, 0.03em);
   color: var(--light-blue-color);
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     justify-content: start;
   }
   @media screen and (min-width: 1200px) {
@@ -47,13 +48,17 @@
   color: var(--white-color);
 }
 .contacts-footeer-list {
+  // width: 231px;
   margin-bottom: -9px;
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
 }
 .contacts-footeer-list__item {
   display: flex;
   justify-content: center;
   margin-bottom: 9px;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     justify-content: start;
   }
 }
