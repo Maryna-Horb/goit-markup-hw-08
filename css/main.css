@@ -539,7 +539,7 @@ img {
 }
 
 .open-menu-btn__icon {
-  fill: #000000;
+  fill: currentColor;
   left: auto;
   width: 24px;
   height: 16px;
