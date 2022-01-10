@@ -537,10 +537,12 @@ img {
 }
 
 .open-menu-btn__icon {
+  margin: 0 auto;
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 24px;
-  min-height: 16px;
+  width: 24px;
+  height: 16px;
 }
 @media screen and (min-width: 768px) {
   .open-menu-btn__icon {
