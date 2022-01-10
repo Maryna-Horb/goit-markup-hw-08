@@ -540,6 +540,8 @@ img {
 
 .open-menu-btn__icon {
   fill: currentColor;
+  justify-content: center;
+  align-items: center;
   left: auto;
   width: 24px;
   height: 16px;
